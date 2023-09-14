@@ -1,3 +1,4 @@
+import ButtonExample from "./components/ButtonExample";
 import Hero from "./components/Hero";
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
         <Hero />
         <div className="mx-auto">
           <div className="grid place-items-center gap-12 mt-16">
-            Buttons go here
+            <ButtonExample variant="secondary" size="md">
+              Learn more
+            </ButtonExample>
           </div>
         </div>
       </div>
