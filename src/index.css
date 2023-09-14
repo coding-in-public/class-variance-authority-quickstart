@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --hue: 189;
+
+    /* light mode defaults */
+    --color-theme-light: calc(var(--hue) - 45) 25% 98%;
+    --color-theme-light-50: calc(var(--hue) - 10) 35% 95.1%;
+    --color-theme-light-100: calc(var(--hue) - 10) 34% 93.1%;
+    --color-theme-light-200: calc(var(--hue) - 11) 35.8% 86%;
+    --color-theme-light-300: calc(var(--hue) - 5) 35% 74.4%;
+    --color-theme-light-400: calc(var(--hue) - 4) 34% 60.1%;
+    --color-theme-light-500: calc(var(--hue) - 4) 34.3% 46.9%;
+    --color-theme-light-600: calc(var(--hue) - 3) 35.3% 39.5%;
+    --color-theme-light-700: calc(var(--hue) - 5) 35.3% 30.5%;
+    --color-theme-light-800: calc(var(--hue) - 2) 35% 20.5%;
+    --color-theme-light-900: calc(var(--hue) - 2) 33% 9.2%;
+
+    /* dark mode defaults */
+    --color-theme-dark: var(--hue) 42.6% 7.5%;
+    --color-theme-dark-50: var(--hue) 38.6% 17.5%;
+    --color-theme-dark-100: var(--hue) 35% 20.7%;
+    --color-theme-dark-200: var(--hue) 29.3% 34.5%;
+    --color-theme-dark-300: var(--hue) 30.8% 40.4%;
+    --color-theme-dark-400: var(--hue) 29.3% 54.5%;
+    --color-theme-dark-500: var(--hue) 36.8% 63.9%;
+    --color-theme-dark-600: var(--hue) 35.2% 72.1%;
+    --color-theme-dark-700: var(--hue) 36.2% 80.1%;
+    --color-theme-dark-800: var(--hue) 26.3% 85.9%;
+    --color-theme-dark-900: var(--hue) 36.8% 95.9%;
+
+    --color-theme: var(--color-theme-light);
+    --color-theme-50: var(--color-theme-light-50);
+    --color-theme-100: var(--color-theme-light-100);
+    --color-theme-200: var(--color-theme-light-200);
+    --color-theme-300: var(--color-theme-light-300);
+    --color-theme-400: var(--color-theme-light-400);
+    --color-theme-500: var(--color-theme-light-500);
+    --color-theme-600: var(--color-theme-light-600);
+    --color-theme-700: var(--color-theme-light-700);
+    --color-theme-800: var(--color-theme-light-800);
+    --color-theme-900: var(--color-theme-light-900);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-theme: var(--color-theme-dark);
+      --color-theme-50: var(--color-theme-dark-50);
+      --color-theme-100: var(--color-theme-dark-100);
+      --color-theme-200: var(--color-theme-dark-200);
+      --color-theme-300: var(--color-theme-dark-300);
+      --color-theme-400: var(--color-theme-dark-400);
+      --color-theme-500: var(--color-theme-dark-500);
+      --color-theme-600: var(--color-theme-dark-600);
+      --color-theme-700: var(--color-theme-dark-700);
+      --color-theme-800: var(--color-theme-dark-800);
+      --color-theme-900: var(--color-theme-dark-900);
+      color-scheme: dark;
+    }
+  }
+}
